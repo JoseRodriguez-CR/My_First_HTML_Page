@@ -1,0 +1,185 @@
+<!--This is the structure for adding comments to the HTML code-->
+<!--
+    <element-name attribute Name="attribute value">
+    </element-name>
+-->
+<html>
+    <head> 
+        <title> 
+        My First HTML Page
+        </title>
+    </head>
+        <body>
+            <h1>
+                This is the main title of the page
+            </h1>
+            <h2>
+                H2
+            </h2>
+            <h3>
+                H3
+            </h3>
+            <h4>
+                H4
+            </h4>
+            <h5>
+                H5
+            </h5>
+            <h6>
+                H6
+            </h6>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ex veritatis, repellendus aperiam nam tempora maxime provident obcaecati sapiente reiciendis tenetur porro possimus nihil. Odit enim et esse repellendus vitae!
+            </p>
+            <table>
+            <tr>
+                <th>
+                    Colum1
+                </th> 
+                <th>
+                    Colum2
+                </th> 
+                <th>
+                    Colum3
+                </th> 
+            </tr>
+            
+            <tr>
+                <td>
+                    <b>
+                    Data1
+                    </b>
+                </td>
+                <td>
+                    Data2
+                </td>
+                <td>
+                    Data3
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    Data1
+                </td>
+                <td>
+                    Data2
+                </td>
+                <td>
+                    Data3
+                </td>
+            </tr> 
+            </table>  
+            <ol>  <!--ordered list -->
+                <li>
+                    First
+                </li>
+            </ol> 
+            <ul class="info"> <!--unordered list -->
+                <li>
+                    First
+                </li>  
+            </ul>  
+            <a href="https://www.google.com">
+                Google
+            </a> 
+            <br/> <!-- this one do not required the closing tag-->
+            <a href="./About/About.html">
+                Go to about 
+                </a>
+
+                <form class="info"> <<!-- identify a group of elements-->
+                    <fieldset>
+                        <Legend>  <!--legend is used to add a title at the top of the box-->
+                            Title of the form
+                        </Legend>
+                        <Label for="firstName">  <!--for is an attribute on label that refers the input box we assign to it-->
+                            First Name:
+                        </Label>
+                        <input type="Text"id="firstName" name="firstname" placeholder="Your name here"/>  
+                        <!--id is use to identify an element-->
+                        <!--for name attribute use the same value we assigned to id, but the moment is not neccesary but it will help on javascript-->
+                        <!--placeholder is used to provide a guide about which information to fill out in the box, this is optional-->
+                        <!--the value attribute is used to assign a value to the inoput but is better to use it from javascript, it is optional here-->
+                        <!--input is a box that collect information, this information can be text or another type of data-->
+                        <br/>
+                        <label>
+                            Password:
+                        </label>
+                        <input type="password" name="userPassword" id="Password" >
+                        <br/>
+                        <input type="checkbox" name="favoriteMovie" id="lordOfTheRings" value="lotr">  <!-- all the label in the same checkbox need the same name-->
+                        <label>
+                            Lord Of The Rings
+                            <input type="checkbox" name="favoriteMovie" id="harryPotter" value="hp">  <!-- all the label in the same checkbox need the same name-->
+                        </label>
+                            Harry Potter
+                        </label>
+                        <br/>
+                        <input type="checkbox" name="favoriteMovie" id="lionKing" value="lk">  <!-- all the label in the same checkbox need the same name-->
+                        <label>
+                            Lion King
+                        </label>
+                        <br/>
+                        Are you liking this class so far?
+                        <br/>
+                        <input type="radio" name="like" id="yes" value="yes">
+                        <label>
+                            Yes
+                        </label>
+                        <input type="radio" name="like" id="no" value="no">
+                        <label>
+                            No
+                        </label>
+                        <input type="radio" name="like" id="maybe" value="maybe">
+                        <label>
+                            Maybe
+                        </label>
+                        <br/>
+                        <label>
+                            Date:
+                        </label>
+                        Date: <input type="date" />
+                        <br/>
+                        <label>
+                            Select your country:
+                        </label>
+                        <select id="country">
+                            <option value="0">
+                                Please select a country
+                            </option>
+                            <option value="CR">
+                                Costa Rica
+                            </option>
+                            <option value="EC">
+                                Ecuador
+                            </option>
+                            <option value="MX">
+                                Mexico
+                            </option>
+                        </select>
+                        <br/>
+                        <label for="comment">
+                            Leave a comment:
+                        </label>
+                        <textarea id="comment" name="comment"></textarea>
+                        <br/>
+                        <input type="submit" value="Submit" />
+                        <button type="submit">  <!-- in the button is easier to use the button because of the style -->
+                            Submit
+                        </button>
+                    </fieldset>
+
+                </form>
+                <img alt="A 4 Runner image" src="https://www.google.com/search?q=4runner&tbm=isch&ved=2ahUKEwitz5yqpuvyAhVFB98KHYfcBB8Q2-cCegQIABAA&oq=4runner&gs_lcp=CgNpbWcQAzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoICAAQgAQQsQM6CwgAEIAEELEDEIMBUJlWWIpfYMVmaABwAHgAgAFuiAHlBZIBAzEuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Fok2Ya3sDMWO_AaHuZP4AQ&bih=531&biw=1229&rlz=1C1SQJL_esCR902CR902#imgrc=GWNNalFtNV4xOM"/> <!-- we use source attribute for images-->
+                <video src=""></video>
+
+                <!--all HTML element have inline behavior or block behavior-->
+
+                <div></div> <!--divisor (div) behaves as a block element and it is use to divide section of contents -->
+
+
+                <span></span> <!--it behaves as an inline element, is use to locate elements next to others, also we can use it to link to others web pages-->
+
+        </body>
+</html>
+https://www.google.com/search?q=4runner&tbm=isch&ved=2ahUKEwitz5yqpuvyAhVFB98KHYfcBB8Q2-cCegQIABAA&oq=4runner&gs_lcp=CgNpbWcQAzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoICAAQgAQQsQM6CwgAEIAEELEDEIMBUJlWWIpfYMVmaABwAHgAgAFuiAHlBZIBAzEuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Fok2Ya3sDMWO_AaHuZP4AQ&bih=531&biw=1229&rlz=1C1SQJL_esCR902CR902#imgrc=GWNNalFtNV4xOMhttps://www.google.com/search?q=4runner&tbm=isch&ved=2ahUKEwitz5yqpuvyAhVFB98KHYfcBB8Q2-cCegQIABAA&oq=4runner&gs_lcp=CgNpbWcQAzIECAAQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoICAAQgAQQsQM6CwgAEIAEELEDEIMBUJlWWIpfYMVmaABwAHgAgAFuiAHlBZIBAzEuNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Fok2Ya3sDMWO_AaHuZP4AQ&bih=531&biw=1229&rlz=1C1SQJL_esCR902CR902#imgrc=GWNNalFtNV4xOM
